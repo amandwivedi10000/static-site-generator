@@ -1,4 +1,4 @@
-from test_to_textnodes import text_to_textnodes
+from text_to_textnodes import text_to_textnodes
 import unittest
 
 from textnode import TextNode, TextType

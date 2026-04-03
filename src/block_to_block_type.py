@@ -15,7 +15,7 @@ def block_to_block_type(block: str):
     heading = ("# ", "## ", "### ", "#### ", "##### ", "###### ")
     if block.startswith(heading):
         return BlockType.HEADING
-    elif len(lines) > 1 and lines[0] == "```" and lines[-1] == "```":
+    elif len(lines) > 1 and lines[0].strip() == "```" and lines[-1].strip() == "```":
         return BlockType.CODE
     elif all(line.startswith(">") for line in lines):
         return BlockType.QUOTE

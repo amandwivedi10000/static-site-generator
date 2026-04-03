@@ -3,8 +3,6 @@ from split_nodes_delimiter import split_nodes_delimiter
 from textnode import TextType, TextNode
 import re
 
-"This is **text** with an _italic_ word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)"
-
 
 def text_to_textnodes(text):
     nodes = [TextNode(text, TextType.TEXT)]
